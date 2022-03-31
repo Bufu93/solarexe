@@ -1,0 +1,96 @@
+.clients {
+    margin-bottom: 150px;
+    &__title {
+        margin-bottom: 60px;
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #868585;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.clients-slider {
+    &__img {
+        margin-bottom: 32px;
+    }
+    &__buttons {
+        text-align: right;
+        margin-right: 100px;
+    }
+}
+.clients-slider-btn {
+    width: 50px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    &--prev {
+        background-image: url('/img/prev.svg');
+        margin-right: 20px;
+    }
+    &--next {
+        background-image: url('/img/next.svg')
+    }
+}
+.clients-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title{
+        margin-bottom: 30px;
+        max-width: 478px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+    }
+    &__item {
+        margin-bottom: 15px;
+        padding-left: 50px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #303030;
+    }
+}
+.clients-btn {
+    margin-bottom: 46px;
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #303030;
+    background-image: url('/img/arrow-black.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &::after {
+        content: "записаться на консультацию";
+        display: inline-block;
+        position: absolute;
+        bottom: 16px;
+        left: 50px;
+        min-width: 258px;
+        color: #303030;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    &:hover {
+        background-color: #A9A32A;
+        transition: 0.3s ease;
+    }
+}

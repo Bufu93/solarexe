@@ -5,7 +5,12 @@
 
 // Sections or Pages SCSS-files imports
 @import './header';
-// @import './footer';
+@import './service';
+@import './greentarif';
+@import './section-three';
+@import './clients';
+@import './steps';
+@import './footer';
 
 // Libs
 // @import './libs/swiper';

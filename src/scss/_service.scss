@@ -1,0 +1,47 @@
+.service {
+    margin-bottom: 150px;
+    &__title {
+        margin-bottom: 60px;
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #868585;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 510px;
+    }
+    &__img {
+
+    }
+}
+.service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__item {
+
+    }
+    &__title {
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

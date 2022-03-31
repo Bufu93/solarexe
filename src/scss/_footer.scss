@@ -1,4 +1,114 @@
-// Footer
-footer {
+.footer {
+    padding-top: 70px;
+    color: #ffffff;
+    background-image: url('/img/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 730px;
+    width: 100%;
+    height: 100vh;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.form {
+    width: 100%;
+    max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin-bottom: 60px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: uppercase;
+
+    }
+    &__input {
+        margin-bottom: 60px;
+        background-color: transparent;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 11px;
+        outline: none;
+        color: #ffffff;
+    }
+    &__input::placeholder {
+        color: #ffffff;
+    }
+}
+.form-btn {
+    position: relative;
     display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #FFFFFF;
+    background-image: url('/img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    outline: none;
+    &::after {
+        content: "оставить заявку";
+        display: inline-block;
+        position: absolute;
+        bottom: 16px;
+        left: -10px;
+        min-width: 258px;
+        color: #ffffff;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+.contacts {
+    max-width: 600px;
+    &__title {
+        margin-bottom: 60px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    &__text--tel {
+        display: block;
+        color: #ffffff;
+    }
+    &__text--tel-first {
+        margin-bottom: 0;
+    }
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
 }

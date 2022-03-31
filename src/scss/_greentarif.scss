@@ -1,0 +1,128 @@
+.greentarif {
+    margin-bottom: 150px;
+    &__title {
+        margin-bottom: 60px;
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #868585;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 510px;
+    }
+    &__img {
+        max-width: 600px;
+    }
+    &__img p {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+        margin-bottom: 15px;
+    }
+}
+.greentarif-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+.tabs {
+    &__link {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+        border-bottom: 1px solid rgba(#303030, 0);
+    }
+    &__link:hover {
+        border-bottom: 1px solid rgba(#303030, 1);
+        transition: 0.7s ease;
+    }
+}
+.greentarif-slider {
+    position: relative;
+    &__item {
+
+    }
+    &__img {
+
+    }
+    &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #303030;
+        max-width: 235px;
+    }
+    &__buttons {
+        position: absolute;
+        bottom: 0;
+        right: 109px;
+    }
+}
+.greentarif-slider-btn {
+    width: 50px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    &--prev {
+        background-image: url('/img/prev.svg');
+        margin-right: 20px;
+    }
+    &--next {
+        background-image: url('/img/next.svg')
+    }
+}
+.benefits {
+    &__item {
+        max-width: 235px;
+    }
+    &__title {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+        margin-bottom: 5px;
+    }
+    &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #303030;
+    }
+}
