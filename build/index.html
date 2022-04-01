@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar exe</title>
+    <title>SOLAREXE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body class="main__body">
@@ -79,16 +80,42 @@
                     <a class="tabs__link" href="#">ограничения</a>
                 </div>
                 <div class="greentarif-info__slider greentarif-slider">
-                    <div class="greentarif-slider__item">
-                        <img class="greentarif-slider__img" width="235" height="200" src="/img/slide1.jpg" alt="Слайд 1">
+                    <div class="greentarif-slider__slide">
+                        <div class="greentarif-slider__item">
+                            <img class="greentarif-slider__img" width="235" height="200" src="/img/slide1.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="greentarif-slider__text">
+                            <p>Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                        </div>
                     </div>
-                    <div class="greentarif-slider__text">
-                        <p>Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                    <div class="greentarif-slider__slide">
+                        <div class="greentarif-slider__item">
+                            <img class="greentarif-slider__img" width="235" height="200" src="/img/slide1.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="greentarif-slider__text">
+                            <p>Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                        </div>
                     </div>
-                    <div class="greentarif-slider__buttons">
-                        <button class="greentarif-slider-btn greentarif-slider-btn--prev"></button>
-                        <button class="greentarif-slider-btn greentarif-slider-btn--next"></button>
+                    <div class="greentarif-slider__slide">
+                        <div class="greentarif-slider__item">
+                            <img class="greentarif-slider__img" width="235" height="200" src="/img/slide1.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="greentarif-slider__text">
+                            <p>Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                        </div>
                     </div>
+                    <div class="greentarif-slider__slide">
+                        <div class="greentarif-slider__item">
+                            <img class="greentarif-slider__img" width="235" height="200" src="/img/slide1.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="greentarif-slider__text">
+                            <p>Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="greentarif-slider__buttons">
+                    <button class="greentarif-slider-btn greentarif-slider-btn--prev"></button>
+                    <button class="greentarif-slider-btn greentarif-slider-btn--next"></button>
                 </div>
                 <div class="greentarif-info__benefits benefits">
                     <div class="benefits__item">
@@ -129,9 +156,14 @@
                 <div class="clients-slider__img">
                     <img width="510" height="370" src="/img/c-slide1.jpg" alt="слайд">
                 </div>
-                <div class="clients-slider__buttons">
-                    <button class="clients-slider-btn clients-slider-btn--prev"></button>
-                    <button class="clients-slider-btn clients-slider-btn--next"></button>
+                <div class="clients-slider__img">
+                    <img width="510" height="370" src="/img/c-slide1.jpg" alt="слайд">
+                </div>
+                <div class="clients-slider__img">
+                    <img width="510" height="370" src="/img/c-slide1.jpg" alt="слайд">
+                </div>
+                <div class="clients-slider__img">
+                    <img width="510" height="370" src="/img/c-slide1.jpg" alt="слайд">
                 </div>
             </div>
             <div class="clients__info clients-info">
@@ -204,10 +236,16 @@
     <footer class="footer">
     <div class="footer__container container">
         <div class="footer__wrapper">
-            <form action="#" class="footer__form form">
+            <form action="#" class="footer__form form" id="form">
                 <h3 class="form__title">оставить заявку</h3>
-                <input class="form__input" type="text" placeholder="Имя">
-                <input class="form__input" type="number" placeholder="Телефон">
+                <label class="form__label" for="name">
+                    <input class="form__input" type="text" placeholder="Имя" name="name"
+                id="name">
+                </label>
+                <label class="form__label" for="tel">
+                    <input class="form__input tel" type="tel" placeholder="Телефон" name="tel"
+                id="tel">
+                </label>
                 <button class="form-btn" type="submit"></button>
             </form>
             <div class="footer__contacts contacts">
@@ -246,6 +284,9 @@
 
 </body>
 
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/scripts.min.js"></script>
-
 </html>

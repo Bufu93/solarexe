@@ -40,9 +40,6 @@
         max-width: 350px;
     }
     &__slider {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
     }
     &__benefits {
         display: grid;
@@ -67,12 +64,12 @@
     }
 }
 .greentarif-slider {
+    box-sizing: border-box;
     position: relative;
-    &__item {
-
-    }
-    &__img {
-
+    &__slide {
+        display: flex!important;
+        justify-content: space-between!important;
+        box-sizing: border-box;
     }
     &__text {
         font-family: 'Noto Sans';
@@ -89,21 +86,32 @@
         right: 109px;
     }
 }
-.greentarif-slider-btn {
+.slick-arrow {
+    font-size: 0;
     width: 50px;
     height: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-    &--prev {
-        background-image: url('/img/prev.svg');
-        margin-right: 20px;
-    }
-    &--next {
-        background-image: url('/img/next.svg')
-    }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+ }
+.slick-prev {
+    background-image: url('/img/prev.svg');
+    margin-right: 20px;
+    right: 163px;
 }
+.slick-next {
+    background-image: url('/img/next.svg');
+    right: 103px;
+}
+
+        
+        
+
 .benefits {
     &__item {
         max-width: 235px;

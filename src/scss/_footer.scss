@@ -35,17 +35,24 @@
 
     }
     &__input {
-        margin-bottom: 60px;
         background-color: transparent;
-        border-bottom: 1px solid #FFFFFF;
-        padding-bottom: 11px;
         outline: none;
         color: #ffffff;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 11px;
+        margin-top: 20px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 11px;
+        margin-bottom: 60px;
     }
     &__input::placeholder {
         color: #ffffff;
     }
 }
+
 .form-btn {
     position: relative;
     display: block;
@@ -71,6 +78,10 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
+    }
+    &:hover {
+        background-color: #A9A32A;
+        transition: 0.3s ease;
     }
 }
 .contacts {
@@ -111,4 +122,6 @@
         font-size: 14px;
         line-height: 16px;
     }
+}
+.just-validate-error-label {
 }

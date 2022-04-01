@@ -352,18 +352,6 @@ body.locked {
   max-width: 350px;
 }
 
-.greentarif-info__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
 .greentarif-info__benefits {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -389,7 +377,20 @@ body.locked {
 }
 
 .greentarif-slider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
+}
+
+.greentarif-slider__slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .greentarif-slider__text {
@@ -408,22 +409,29 @@ body.locked {
   right: 109px;
 }
 
-.greentarif-slider-btn {
+.slick-arrow {
+  font-size: 0;
   width: 50px;
   height: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 }
 
-.greentarif-slider-btn--prev {
+.slick-prev {
   background-image: url("/img/prev.svg");
   margin-right: 20px;
+  right: 163px;
 }
 
-.greentarif-slider-btn--next {
+.slick-next {
   background-image: url("/img/next.svg");
+  right: 103px;
 }
 
 .benefits__item {
@@ -501,6 +509,10 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.clients-slider {
+  max-width: 510px;
 }
 
 .clients-slider__img {
@@ -727,12 +739,24 @@ body.locked {
 }
 
 .form__input {
-  margin-bottom: 60px;
   background-color: transparent;
-  border-bottom: 1px solid #FFFFFF;
-  padding-bottom: 11px;
   outline: none;
   color: #ffffff;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 11px;
+  margin-top: 20px;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 11px;
+  margin-bottom: 60px;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -782,6 +806,13 @@ body.locked {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+}
+
+.form-btn:hover {
+  background-color: #A9A32A;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .contacts {

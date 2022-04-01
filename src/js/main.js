@@ -1,27 +1,58 @@
 // Custom scripts
-// Мобильное меню бургер
-function burgerMenu() {
-    const burger = document.querySelector('.burger')
-    const menu = document.querySelector('.menu')
-    const body = document.querySelector('body')
-    burger.addEventListener('click', () => {
-      if (!menu.classList.contains('active')) {
-        menu.classList.add('active')
-        burger.classList.add('active-burger')
-        body.classList.add('locked')
-      } else {
-        menu.classList.remove('active')
-        burger.classList.remove('active-burger')
-        body.classList.remove('locked')
-      }
-    })
-    // Вот тут мы ставим брейкпоинт навбара
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 991.98) {
-        menu.classList.remove('active')
-        burger.classList.remove('active-burger')
-        body.classList.remove('locked')
-      }
-    })
-  }
-  burgerMenu()
+// slider
+$(document).ready(function(){
+  $('.greentarif-slider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
+});
+
+$(document).ready(function(){
+  $('.clients-slider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
+});
+
+// mask
+
+const telSelector = document.getElementById('tel');
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
+
+// validate
+const validation = new JustValidate('#form');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Телефон обязателен',
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#tel', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Телефон обязателен',
+    },
+    {
+      rule: 'function',
+      validator: function() {
+        const phone = telSelector.Inputmask.unmaskedvalue();
+        return phone.length === 10;
+      },
+      errorMessage: 'Введите коректный телефон',
+    },
+  ]);

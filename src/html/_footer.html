@@ -1,10 +1,16 @@
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__wrapper">
-            <form action="#" class="footer__form form">
+            <form action="#" class="footer__form form" id="form">
                 <h3 class="form__title">оставить заявку</h3>
-                <input class="form__input" type="text" placeholder="Имя">
-                <input class="form__input" type="number" placeholder="Телефон">
+                <label class="form__label" for="name">
+                    <input class="form__input" type="text" placeholder="Имя" name="name"
+                id="name">
+                </label>
+                <label class="form__label" for="tel">
+                    <input class="form__input tel" type="tel" placeholder="Телефон" name="tel"
+                id="tel">
+                </label>
                 <button class="form-btn" type="submit"></button>
             </form>
             <div class="footer__contacts contacts">
